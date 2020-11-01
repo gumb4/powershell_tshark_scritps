@@ -1,0 +1,6 @@
+Instructions
+0. (situational) use cmd <"C:\Program Files\Wireshark\tshark.exe" -r <input pcap> -w <output pcap naming scheme> -C 100> if pcap are individually large to split it into 100mb files.
+1. Place powershell scripts in same directory as pcaps to analyze.
+2a. To run all scripts at once, run the powershell command: Set-Executionpolicy -executionpolicy bypass -scope currentuser; .\tshark_unique_scripts.ps1
+2b. To run individual powershell scripts, run the powershell command: Set-Executionpolicy -executionpolicy bypass -scope currentuser; .\<script you want to run>.ps1
+3. Analyze results (meant for excel to help further filters and sort).
